@@ -1,0 +1,21 @@
+.inputWrapper {
+    border: 1px solid red;
+    margin: 10px 0;
+}
+
+.input {
+    height: 40px;
+    width: 320px;
+    border: none;
+}
+
+.inputLabelVisible {
+    position: relative;
+    top: 17px;
+    left: 5px;
+    font-size: 12px;
+}
+
+.inputLabelInvisible {
+    visibility: hidden;
+}

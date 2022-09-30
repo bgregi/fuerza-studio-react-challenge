@@ -1,7 +1,9 @@
 import React from "react"
+import SignIn from "./pages/SignIn/SignIn"
+
 
 function App(){
-    return <h1>Fuerza Test</h1>
+    return <SignIn />
 }
 
 export default App

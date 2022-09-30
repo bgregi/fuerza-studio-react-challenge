@@ -1,0 +1,18 @@
+body {
+    background-color: #F8E5D6;
+    background-image: url('./assets/background-logo.svg');
+    background-repeat: no-repeat;
+    background-position: -160px 42px;
+
+    height: 100vh;
+    width: 100vw;
+
+    padding: 25px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.nocturnalLogoBig {    
+    position: absolute;
+    top: 244px;
+}
