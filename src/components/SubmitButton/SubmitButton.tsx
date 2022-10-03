@@ -1,4 +1,5 @@
 import React from "react";
+import styles from './SubmitButton.module.scss'
 
 interface IProps {
     value: string
@@ -6,7 +7,6 @@ interface IProps {
 
 export default function SubmitButton({ value }: IProps) {
     return (
-        <button type="submit">{value}</button>
-
+        <button className={styles.submitButton} type="submit">{value}</button>
     )
 }

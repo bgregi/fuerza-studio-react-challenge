@@ -19,14 +19,14 @@
 
 
     .forgotPasswordWrapper {
-        position: fixed;
-        width: 320px;
+        display: flex;
+        justify-content: flex-end;
         margin-top: 12px;
-        text-align: right;
-        
+
         .forgotPassword {
             color: $brown;
             font-size: 12px;
+
         }
     }
 

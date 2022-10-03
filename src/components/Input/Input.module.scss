@@ -1,21 +1,44 @@
+@import '../../styles/variables';
+
 .inputWrapper {
-    border: 1px solid red;
-    margin: 10px 0;
-}
+    margin: 10px 0 0;
 
-.input {
-    height: 40px;
-    width: 320px;
-    border: none;
-}
+    .input {
+        height: 14px;
+        width: 294px;
 
-.inputLabelVisible {
-    position: relative;
-    top: 17px;
-    left: 5px;
-    font-size: 12px;
-}
+        border: 1px solid rgba(157, 164, 166, 0.07);
+        border-radius: 4px;
+        padding: 13px;
 
-.inputLabelInvisible {
-    visibility: hidden;
+        font-size: 12px;
+        color: $brown;
+
+        &::placeholder {
+            font-family: Montserrat, sans-serif;
+            color: $brown;
+            font-weight: 600;
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 2px 1px skyblue;
+            padding: 16px 13px 10px;
+        }
+
+    }
+
+
+    .inputLabelVisible {
+        position: relative;
+        top: 17px;
+        left: 13px;
+
+        font-size: 9px;
+        color: #736D6B;
+    }
+
+    .inputLabelInvisible {
+        visibility: hidden;
+    }
 }

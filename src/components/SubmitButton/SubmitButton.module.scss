@@ -1,0 +1,17 @@
+@import '../../styles/variables';
+
+.submitButton {
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    background: $brown;
+    border: 2px solid $brown;
+    border-radius: 40px;
+
+    height: 44px;
+    width: 165px;
+
+    box-shadow: 0 2px 4px lightgrey;
+}
