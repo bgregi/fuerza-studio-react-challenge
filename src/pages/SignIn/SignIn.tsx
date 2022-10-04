@@ -6,6 +6,18 @@ import styles from "./SignIn.module.scss"
 
 
 export default function SignIn() {
+
+
+
+
+    function handleInputChange(e: React.ChangeEvent<HTMLInputElement>) {
+        const name = e.target.name
+        const value = e.target.value
+
+        console.log(name)
+        console.log(value)
+    }
+    
     return (
         <>
             <img src={nocturnalLogo} alt="nocturnal-logo" className="nocturnalLogoBig" />
@@ -15,8 +27,8 @@ export default function SignIn() {
                     <h1>Sign in</h1>
                     <a className={styles.signUp} href="">Sign up</a>
                 </div>
-                <Input type="text" placeholder="Your username" />
-                <Input type="password" placeholder="Your password" />
+                <Input handleInputChange={handleInputChange} name="username" type="text" placeholder="Your username" />
+                <Input handleInputChange={handleInputChange} name="password" type="password" placeholder="Your password" />
                 <div className={styles.forgotPasswordWrapper}>
                     <a className={styles.forgotPassword} href="">Forgot Password?</a><br />
                 </div>
