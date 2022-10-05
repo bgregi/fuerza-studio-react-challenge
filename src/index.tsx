@@ -3,14 +3,20 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { setupServer } from './services/mirage/server';
 import './index.scss';
+import { RecoilRoot } from 'recoil';
+import { BrowserRouter } from 'react-router-dom';
 
 if (process.env.NODE_ENV === 'development') {
-  setupServer();
+    setupServer();
 }
 
 ReactDOM.render(
-  <React.StrictMode>
-      <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <React.StrictMode>
+        <RecoilRoot>
+            <BrowserRouter>
+                <App />
+            </ BrowserRouter>
+        </RecoilRoot>
+    </React.StrictMode>,
+    document.getElementById('root')
 );

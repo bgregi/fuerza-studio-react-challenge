@@ -39,7 +39,7 @@ export default function SignIn() {
             <form className={styles.signInForm} onSubmit={handleSubmit}>
                 <div className={styles.title}>
                     <h1>Sign in</h1>
-                    <a className={styles.signUp} href="">Sign up</a>
+                    <a className={styles.signUp} href="/signup">Sign up</a>
                 </div>
                 <Input handleInputChange={handleInputChange} name="username" type="text" placeholder="Your username" />
                 <Input handleInputChange={handleInputChange} name="password" type="password" placeholder="Your password" />

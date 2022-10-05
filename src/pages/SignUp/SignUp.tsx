@@ -45,7 +45,7 @@ export default function SignUp() {
             <form className={styles.signInForm} onSubmit={handleSubmit}>
                 <div className={styles.title}>
                     <h1>Sign Up</h1>
-                    <a className={styles.signUp} href="">Already have an account</a>
+                    <a className={styles.signUp} href="/">Already have an account</a>
                 </div>
                 <Input handleInputChange={handleInputChange} name="username" type="text" placeholder="Define a username" />
                 <Input handleInputChange={handleInputChange} name="password" type="password" placeholder="Set your password" />
