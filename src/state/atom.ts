@@ -1,6 +1,11 @@
 import { atom } from 'recoil';
 
-export const currentUserId = atom({
-    key: 'currentUserId',
+export const currentUser = atom({
+    key: 'currentUser',
+    default: {}
+})
+
+export const currentUserJournals = atom({
+    key: 'currentUserJournals',
     default: {}
 })
