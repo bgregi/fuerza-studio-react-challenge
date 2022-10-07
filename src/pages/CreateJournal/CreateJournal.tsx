@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import nocturnalLogo from '../../../assets/nocturnal-logo.svg'
+import nocturnalLogo from '../../assets/nocturnal-logo.svg'
 import { useNavigate } from "react-router-dom";
 import { useRecoilState } from "recoil";
-import SubmitButton from "../../../components/SubmitButton/SubmitButton";
-import http from "../../../services/api";
-import { currentUser } from "../../../state/atom";
+import SubmitButton from "../../components/SubmitButton/SubmitButton";
+import http from "../../services/api";
+import { currentUser } from "../../state/atom";
 import styles from "./CreateJournal.module.scss"
 
 export default function CreateJournal() {

@@ -4,7 +4,9 @@ import { Route, Routes } from "react-router-dom"
 import SignIn from "./pages/SignIn/SignIn"
 import SignUp from "./pages/SignUp/SignUp"
 import JournalList from "./pages/JournalList/JournalList"
-import CreateJournal from "./pages/JournalList/CreateJournal/CreateJournal"
+import CreateJournal from "./pages/CreateJournal/CreateJournal"
+import JournalPostList from "./pages/JournalPostList/JournalPostList"
+import CreateNote from "./pages/CreateNote/CreateNote"
 
 
 function App() {
@@ -14,8 +16,9 @@ function App() {
             <Route path="/signup" element={<SignUp />}/>
             <Route path="/journals/:id" element={<JournalList />}/>
             <Route path="/journals/createjournal" element={<CreateJournal />}/>
+            <Route path="/journals/entries/:id" element={<JournalPostList />}/>
+            <Route path="/journals/entries/createnote/:id" element={<CreateNote />}/>
 
-            {/* <JournalPostList title="HTML"/> */}
         </ Routes>
     )
 }

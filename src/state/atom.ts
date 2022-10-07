@@ -9,3 +9,8 @@ export const currentUserJournals = atom({
     key: 'currentUserJournals',
     default: {}
 })
+
+export const currentJournalPosts = atom({
+    key: 'currentJournalPosts',
+    default: {}
+})

@@ -1,4 +1,21 @@
-@import '../../../styles/variables';
+@import '../../styles/variables';
+
+.title {
+    display: flex;
+    justify-content: flex-start;
+
+    position: absolute;
+    top: 99px;
+    
+    h2 {
+        margin: 3px 0 0 19px;
+        
+        font-family: Abhaya Libre, serif;
+        color: black;
+        font-size: 24px;
+    }
+
+}
 
 .createNoteForm {
     position: relative;
